@@ -1,5 +1,7 @@
 # Money Uphold Bank
 
+[![Build Status](https://travis-ci.org/subvisual/money-uphold-bank.svg?branch=master)](https://travis-ci.org/subvisual/money-uphold-bank) [![Code Climate](https://codeclimate.com/github/subvisual/money-uphold-bank/badges/gpa.svg)](https://codeclimate.com/github/subvisual/money-uphold-bank)
+
 A gem that calculates the exchange rate using published rates from https://uphold.com
 
 To be used as an exchange rate provider for the [money gem](https://github.com/RubyMoney/money)
