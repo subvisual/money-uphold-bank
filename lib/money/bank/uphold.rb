@@ -18,7 +18,7 @@ class Money
 
       def initialize(*args, &block)
         super
-        ttl_in_seconds = 3600 # 1 hour
+        self.ttl_in_seconds = 3600 # 1 hour
       end
 
       # Update all rates from UpholdBank JSON
