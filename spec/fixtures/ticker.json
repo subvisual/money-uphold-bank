@@ -1,0 +1,182 @@
+[
+   {
+      "bid" : "0.5",
+      "ask" : "0.5",
+      "pair" : "AUDUSD",
+      "currency" : "USD"
+   },
+   {
+      "ask" : "737.96",
+      "bid" : "736.83",
+      "pair" : "BTCUSD",
+      "currency" : "USD"
+   },
+   {
+      "bid" : "19.5169614642",
+      "ask" : "19.5485604",
+      "pair" : "ETHUSD",
+      "currency" : "USD"
+   },
+   {
+      "currency" : "USD",
+      "pair" : "EURUSD",
+      "ask" : "1.1238",
+      "bid" : "1.1237"
+   },
+   {
+      "currency" : "USD",
+      "pair" : "GBPUSD",
+      "bid" : "1.4166",
+      "ask" : "1.4168"
+   },
+   {
+      "ask" : "5.4345809668",
+      "bid" : "5.3968818618",
+      "currency" : "USD",
+      "pair" : "LTCUSD"
+   },
+   {
+      "pair" : "NZDUSD",
+      "currency" : "USD",
+      "ask" : "0.7046",
+      "bid" : "0.7044"
+   },
+   {
+      "ask" : "3.674",
+      "bid" : "3.673",
+      "pair" : "USDAED",
+      "currency" : "AED"
+   },
+   {
+      "ask" : "13.741",
+      "bid" : "13.7369",
+      "pair" : "USDARS",
+      "currency" : "ARS"
+   },
+   {
+      "currency" : "BRL",
+      "pair" : "USDBRL",
+      "ask" : "3.4745",
+      "bid" : "3.473"
+   },
+   {
+      "pair" : "USDCAD",
+      "currency" : "CAD",
+      "ask" : "1.2976",
+      "bid" : "1.2975"
+   },
+   {
+      "bid" : "0.9625",
+      "ask" : "0.9626",
+      "currency" : "CHF",
+      "pair" : "USDCHF"
+   },
+   {
+      "pair" : "USDCNY",
+      "currency" : "CNY",
+      "bid" : "6.5881",
+      "ask" : "6.5892"
+   },
+   {
+      "bid" : "6.6169",
+      "ask" : "6.6172",
+      "pair" : "USDDKK",
+      "currency" : "DKK"
+   },
+   {
+      "pair" : "USDHKD",
+      "currency" : "HKD",
+      "bid" : "7.76",
+      "ask" : "7.7601"
+   },
+   {
+      "bid" : "3.8642",
+      "ask" : "3.8652",
+      "pair" : "USDILS",
+      "currency" : "ILS"
+   },
+   {
+      "bid" : "67.225",
+      "ask" : "67.23",
+      "currency" : "INR",
+      "pair" : "USDINR"
+   },
+   {
+      "currency" : "JPY",
+      "pair" : "USDJPY",
+      "bid" : "104.295",
+      "ask" : "104.298"
+   },
+   {
+      "bid" : "101.29",
+      "ask" : "103.07",
+      "pair" : "USDKES",
+      "currency" : "KES"
+   },
+   {
+      "pair" : "USDMXN",
+      "currency" : "MXN",
+      "bid" : "18.9142",
+      "ask" : "18.917"
+   },
+   {
+      "currency" : "NOK",
+      "pair" : "USDNOK",
+      "bid" : "8.3545",
+      "ask" : "8.3556"
+   },
+   {
+      "pair" : "USDPHP",
+      "currency" : "PHP",
+      "ask" : "46.426",
+      "bid" : "46.4105"
+   },
+   {
+      "pair" : "USDPLN",
+      "currency" : "PLN",
+      "ask" : "3.9546",
+      "bid" : "3.9533"
+   },
+   {
+      "ask" : "8.3472",
+      "bid" : "8.346",
+      "pair" : "USDSEK",
+      "currency" : "SEK"
+   },
+   {
+      "ask" : "1.3518",
+      "bid" : "1.3517",
+      "currency" : "SGD",
+      "pair" : "USDSGD"
+   },
+   {
+      "bid" : "0.0899153649",
+      "ask" : "0.0935511892",
+      "pair" : "VOXUSD",
+      "currency" : "USD"
+   },
+   {
+      "ask" : "18.2989",
+      "bid" : "17.7593",
+      "pair" : "XAGUSD",
+      "currency" : "USD"
+   },
+   {
+      "ask" : "1312.928",
+      "bid" : "1294.696",
+      "currency" : "USD",
+      "pair" : "XAUUSD"
+   },
+   {
+      "currency" : "USD",
+      "pair" : "XPDUSD",
+      "ask" : "546.2225",
+      "bid" : "528.8374"
+   },
+   {
+      "bid" : "992.2662",
+      "ask" : "1025.3487",
+      "pair" : "XPTUSD",
+      "currency" : "USD"
+   }
+]
