@@ -6,6 +6,8 @@ rvm:
   - ruby-head
   - jruby-1.6.8
   - rbx-2.2.10
+before_install:
+  - gem install bundler -v 1.11.2
 matrix:
   allow_failures:
     - rvm: ruby-head
