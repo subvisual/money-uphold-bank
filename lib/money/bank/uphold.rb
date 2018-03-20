@@ -4,8 +4,8 @@ require "open-uri"
 class Money
   module Bank
     class Uphold < Money::Bank::VariableExchange
-      UPHOLD_TICKERS_URL = "https://api.uphold.com/v0/ticker".freeze
-      UPHOLD_BASE_CURRENCY = "USD".freeze
+      UPHOLD_TICKERS_URL = "https://api.uphold.com/v0/ticker/AUD".freeze
+      UPHOLD_BASE_CURRENCY = "AUD".freeze
 
       # Seconds after which the current rates are automatically expired
       attr_accessor :ttl_in_seconds
