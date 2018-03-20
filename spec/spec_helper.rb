@@ -6,7 +6,7 @@ RSpec.configure do |config|
 
   config.before(:each) do
     WebMock.
-      stub_request(:get, "https://api.uphold.com/v0/ticker").
+      stub_request(:get, "https://api.uphold.com/v0/ticker/AUD").
       to_return(
         status: 200,
         body: File.read(File.join(File.dirname(__FILE__), "fixtures", "ticker.json")),
