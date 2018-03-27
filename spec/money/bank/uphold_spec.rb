@@ -37,7 +37,7 @@ RSpec.describe Money::Bank::Uphold do
 
         exchanged_money = subject.exchange_with(money, :AUD)
 
-        expect(exchanged_money).to eq Money.new(130, :AUD)
+        expect(exchanged_money).to eq Money.new(200, :AUD)
       end
 
       it "is able to exchange money back to USD" do
