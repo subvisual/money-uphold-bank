@@ -4,8 +4,8 @@ require "open-uri"
 class Money
   module Bank
     class Uphold < Money::Bank::VariableExchange
-      UPHOLD_TICKERS_URL = "https://api.uphold.com/v0/ticker/AUD".freeze
-      UPHOLD_BASE_CURRENCY = "AUD".freeze
+      UPHOLD_TICKERS_BASE_URL = "https://api.uphold.com/v0/ticker/".freeze
+      UPHOLD_BASE_CURRENCY = "USD".freeze
 
       # Seconds after which the current rates are automatically expired
       attr_accessor :ttl_in_seconds
@@ -40,13 +40,33 @@ class Money
         super || get_indirect_rate(iso_from, iso_to, opts)
       end
 
+      # Set the base currency for all rates. By default, USD is used.
+      # @example
+      #   uphold.source = 'USD'
+      #
+      # @param value [String] Currency code, ISO 3166-1 alpha-3
+      #
+      # @return [String] chosen base currency
+      def source=(value)
+        @source = Money::Currency.find(value.to_s).iso_code
+      rescue
+        @source = UPHOLD_BASE_CURRENCY
+      end
+
+      # Get the base currency for all rates. By default, USD is used.
+      #
+      # @return [String] base currency
+      def source
+        @source ||= UPHOLD_BASE_CURRENCY
+      end
+
       private
 
       def get_indirect_rate(iso_from, iso_to, opts = {})
         return 1 if Currency.wrap(iso_from).iso_code == Currency.wrap(iso_to).iso_code
 
-        rate_to_base = original_get_rate(iso_from, UPHOLD_BASE_CURRENCY, opts)
-        rate_from_base = original_get_rate(UPHOLD_BASE_CURRENCY, iso_to, opts)
+        rate_to_base = original_get_rate(source, iso_to, opts)
+        rate_from_base = original_get_rate(source, iso_to, opts)
 
         return unless rate_to_base && rate_from_base
 
@@ -87,7 +107,11 @@ class Money
       end
 
       def read_from_url
-        open(UPHOLD_TICKERS_URL).read
+        open(source_url).read
+      end
+
+      def source_url
+        URI.join(UPHOLD_TICKERS_BASE_URL, source)
       end
     end
   end
