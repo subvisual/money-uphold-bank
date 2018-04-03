@@ -49,8 +49,6 @@ class Money
       # @return [String] chosen base currency
       def source=(value)
         @source = Money::Currency.find(value.to_s).iso_code
-      rescue
-        @source = UPHOLD_BASE_CURRENCY
       end
 
       # Get the base currency for all rates. By default, USD is used.
