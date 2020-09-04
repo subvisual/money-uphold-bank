@@ -63,7 +63,7 @@ class Money
       def get_indirect_rate(iso_from, iso_to, opts = {})
         return 1 if Currency.wrap(iso_from).iso_code == Currency.wrap(iso_to).iso_code
 
-        rate_to_base = original_get_rate(source, iso_to, opts)
+        rate_to_base = original_get_rate(iso_from, source, opts)
         rate_from_base = original_get_rate(source, iso_to, opts)
 
         return unless rate_to_base && rate_from_base
